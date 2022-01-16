@@ -9,10 +9,10 @@ import pytest
 #     def test_a(self):
 #         print("------->test_a")
 #         assert 1
-#     @pytest.mark.skipif(condition=2 > 1, reason ="跳过该函数") # 跳过测试函数test_b
-#     def test_b(self):
-#         print("------->test_b")
-#         assert 0
+@pytest.mark.skipif(condition=2 > 1, reason="跳过该函数")  # 跳过测试函数test_b
+def test_b(self):
+    print("------->test_b")
+    assert 0
 
 def setup_module():
     print('setup_fuc')
@@ -43,8 +43,7 @@ class Test_ABC:
 
     @pytest.mark.xfail(2 > 1, reason="标注为预期失败")  # 标记为预期失败函数test_b
     def test_b(self):
-        print("------->test_b")
-        assert 0
+        print("------->test_b22222222222")
+        assert 1
 
-
-pytest.main(["-s", "pytest1.py"])
+# pytest.main(["-s", "pytest1.py"])

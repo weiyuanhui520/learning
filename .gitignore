@@ -1,1 +1,22 @@
 # Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+__pycache__/
+apian.py
+assets/
+gequ.py
+pachong.py
+param01.py
+send_mail.py
+song.py
+step01_send_email.py
+test_01.py
+test_02.py
+test_03.py
+xinxi.txt
+zhangmi.txt
+zhuangshiqi.py
